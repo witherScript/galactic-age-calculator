@@ -12,4 +12,12 @@ export default class Person {
     return parseFloat(((this.age * 365) / 225).toFixed(2));
   }
 
+  toMars() {
+    return parseFloat(((this.age * 365) / 687).toFixed(2));
+  }
+
+
+
+
+
 }

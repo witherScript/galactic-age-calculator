@@ -18,9 +18,16 @@ describe('Person', () => {
   });
 
   test('should correctly return a users age in Venus years', () => {
+    const john = new Person("John", 30);
+    expect(john.toVenus()).toEqual(48.67);
   });
 
-  const john = new Person("John", 30);
-  expect(john.toVenus()).toEqual(48.67);
+  test('should correctly return a users age in Mars years', () => {
+
+    const john = new Person("John", 30);
+    expect(john.toMars()).toEqual(15.94);
+
+  });
+
 
 });
