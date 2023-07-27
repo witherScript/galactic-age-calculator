@@ -29,5 +29,12 @@ describe('Person', () => {
 
   });
 
+  test('should correctly return a users age in Jupiter years', () => {
+
+    const john = new Person("John", 30);
+    expect(john.toJupiter()).toEqual(2.53);
+
+  });
+
 
 });
