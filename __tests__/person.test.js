@@ -13,8 +13,14 @@ describe('Person', () => {
   test('should correctly return a users age in Mercury years', () => {
 
     const john = new Person("John", 30);
-    expect(john.mercuryAge()).toEqual(124.43);
+    expect(john.toMercury()).toEqual(124.43);
 
   });
+
+  test('should correctly return a users age in Venus years', () => {
+  });
+
+  const john = new Person("John", 30);
+  expect(john.toVenus()).toEqual(48.67);
 
 });
