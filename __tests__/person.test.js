@@ -10,6 +10,11 @@ describe('Person', () => {
 
   });
 
+  test('should correctly return a users age in Mercury years', () => {
 
+    const john = new Person("John", 30);
+    expect(john.mercuryAge()).toEqual(124.43);
+
+  });
 
 });
