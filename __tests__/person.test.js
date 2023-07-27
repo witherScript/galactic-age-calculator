@@ -1,4 +1,4 @@
-
+import Person from '../src/js/person.js';
 describe('Person', () => {
 
   test('should correctly create a person object with a name and age', () => {
