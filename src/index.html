@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galactic Age Calculator</title>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <h1>Galactic Age Calculator</h1>
+  <p>Enter your age in Earth years and we'll tell you how old you are on other planets!</p>
+  <form id="age-form">
+    <label for="name"></label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <label for="age"></label>
+    <input type="number" id="age" name="age" min="0" placeholder="Your Age" required>
+    <button type="submit">Calculate</button>
+  </form>
+  <div id="results" class="hidden">
+    <ul id="ages">
+      <li>On Mercury you are <span id="mercury"></span> years old</li>
+      <li>On Venus you are <span id="venus"></span> years old</li>
+      <li>On Mars you are <span id="mars"></span> years old</li>
+      <li>On Jupiter you are <span id="jupiter"></span> years old</li>
+    </ul>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

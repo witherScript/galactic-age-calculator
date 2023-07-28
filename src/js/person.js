@@ -38,6 +38,4 @@ export default class Person {
     return [earthYears, mercuryYears, venusYears, marsYears, jupiterYears];
   }
 
-
-
 }
