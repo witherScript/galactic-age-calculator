@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galactic Age Calculator</title>
-  <script src="./index.js"></script>
 </head>
 
 <body>
@@ -24,28 +23,28 @@
     <button type="submit">Save</button>
   </form>
 
-  <button id="ages">Calculate Age</button>
-  <button id="birthday">Calculate Years Between 2 Birthdays</button>
-  <button id="years-until">Calculate Years Until a certain Birthday</button>
+  <button id="ages">Calculate Age</button><br>
+  <button id="birthday">Calculate Years Between 2 Birthdays</button><br>
+  <button id="years-until">Calculate Years Until a certain Birthday</button><br>
 
   <div id="years-between" class="hidden">
     <form id="birthday-form">
       <label for="birthday1"></label>
-      <input type="date" id="birthday1" name="birthday1" required>
+      <input type="number" id="birthday1" name="birthday1" placeholder="Enter an age" required>
       <label for="birthday2"></label>
-      <input type="date" id="birthday2" name="birthday2" required>
+      <input type="number" id="birthday2" name="birthday2" placehodler="Enter another age" required>
       <button type="submit">Calculate</button>
     </form>
 
     <ul id="years-between" class="hidden">
       <li>Between your <span id="birthday1"></span> birthday and your <span id="birthday2"></span> birthday on Mercury
-        you will be <span id="mercuryYears"></span> years old</li>
+        you will be <span id="mercuryBetween"></span> years old</li>
       <li>Between your <span id="birthday1"></span> birthday and your <span id="birthday2"></span> birthday on Venus
-        you will be <span id="venusYears"></span> years old</li>
+        you will be <span id="venusBetween"></span> years old</li>
       <li>Between your <span id="birthday1"></span> birthday and your <span id="birthday2"></span> birthday on Mars
-        you will be <span id="marsYears"></span> years old</li>
+        you will be <span id="marsBetween"></span> years old</li>
       <li>Between your <span id="birthday1"></span> birthday and your <span id="birthday2"></span> birthday on Jupiter
-        you will be <span id="jupiterYears"></span> years old</li>
+        you will be <span id="jupiterBetween"></span> years old</li>
     </ul>
   </div>
 
@@ -58,11 +57,11 @@
     </form>
 
     <ul id="years-until" class="hidden">
-      <li>your <span id="futurebirthday"></span> birthday is <span id="mercuryYears"></span> years away on Mercury
+      <li>your <span id="futurebirthday"></span> birthday is <span id="mercuryUntil"></span> years away on Mercury
       </li>
-      <li>your <span id="futurebirthday"></span> birthday is <span id="venusYears"></span> years away on Venus</li>
-      <li>your <span id="futurebirthday"></span> birthday is <span id="marsYears"></span> years away on Mars</li>
-      <li>your <span id="futurebirthday"></span> birthday is <span id="jupiterYears"></span> years away on Jupiter
+      <li>your <span id="futurebirthday"></span> birthday is <span id="venusUntil"></span> years away on Venus</li>
+      <li>your <span id="futurebirthday"></span> birthday is <span id="marsUntil"></span> years away on Mars</li>
+      <li>your <span id="futurebirthday"></span> birthday is <span id="jupiterUntil"></span> years away on Jupiter
       </li>
     </ul>
   </div>
@@ -71,15 +70,15 @@
 
   <div id="results" class="hidden">
     <ul id="ages">
-      <li>On Mercury you are <span id="mercury"></span> years old</li>
-      <li>On Venus you are <span id="venus"></span> years old</li>
-      <li>On Mars you are <span id="mars"></span> years old</li>
-      <li>On Jupiter you are <span id="jupiter"></span> years old</li>
+      <li>On Mercury you are <span id="mercuryAge"></span> years old</li>
+      <li>On Venus you are <span id="venusAge"></span> years old</li>
+      <li>On Mars you are <span id="marsAge"></span> years old</li>
+      <li>On Jupiter you are <span id="jupiterAge"></span> years old</li>
     </ul>
 
 
   </div>
-  <script src="js/main.js"></script>
+  <script src="index.js"></script>
 
 </body>
 
