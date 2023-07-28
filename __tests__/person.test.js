@@ -36,5 +36,11 @@ describe('Person', () => {
 
   });
 
+  test('should correctly determine years between birthdays on Earth expressed in all other planets years', () => {
+
+    const john = new Person("John", 30);
+    expect(john.yearsBetween(56, 61)).toStrictEqual([5, 20.74, 8.11, 2.66, 0.42]);
+
+  });
 
 });
