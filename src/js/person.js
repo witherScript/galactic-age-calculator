@@ -29,6 +29,15 @@ export default class Person {
     return [earthYears, mercuryYears, venusYears, marsYears, jupiterYears];
   }
 
+  yearsUntil(birthday) {
+    let earthYears = birthday - this.age;
+    let mercuryYears = parseFloat(((earthYears * 365) / 88).toFixed(2));
+    let venusYears = parseFloat(((earthYears * 365) / 225).toFixed(2));
+    let marsYears = parseFloat(((earthYears * 365) / 687).toFixed(2));
+    let jupiterYears = parseFloat(((earthYears * 365) / 4333).toFixed(2));
+    return [earthYears, mercuryYears, venusYears, marsYears, jupiterYears];
+  }
+
 
 
 }
