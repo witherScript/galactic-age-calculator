@@ -43,4 +43,11 @@ describe('Person', () => {
 
   });
 
+  test('should correctly determine years to future birthday on Earth expressed in all other planets years', () => {
+
+    const john = new Person("John", 30);
+    expect(john.yearsUntil(60)).toStrictEqual([30, 124.43, 48.67, 15.94, 2.53]);
+
+  });
+
 });
