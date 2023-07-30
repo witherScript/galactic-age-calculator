@@ -20,6 +20,12 @@ export default class Person {
     return parseFloat(((this.age * 365) / 4333).toFixed(2));
   }
 
+  /**
+   * Description
+   * @param {any} birthday1
+   * @param {any} birthday2
+   * @returns float[]
+   */
   yearsBetween(birthday1, birthday2) {
     let earthYears = birthday2 - birthday1;
     let mercuryYears = parseFloat(((earthYears * 365) / 88).toFixed(2));
@@ -29,6 +35,11 @@ export default class Person {
     return [earthYears, mercuryYears, venusYears, marsYears, jupiterYears];
   }
 
+  /**
+   * Description
+   * @param {any} birthday
+   * @returns float[]
+   */
   yearsUntil(birthday) {
     let earthYears = birthday - this.age;
     let mercuryYears = parseFloat(((earthYears * 365) / 88).toFixed(2));

@@ -2,6 +2,14 @@ import Person from './js/person.js';
 import './css/styles.css';
 import 'bootstrap';
 
+
+
+
+/**
+ * Description
+ * @param {any} event
+ * @returns {any}
+ */
 function handleYearsBetween(event) {
   event.preventDefault();
   document.querySelector('div#years-between').classList.remove('hidden');
@@ -24,6 +32,11 @@ function handleYearsBetween(event) {
   document.querySelector('ul#years-between').classList.remove('hidden');
 }
 
+/**
+ * Description
+ * @param {any} event
+ * @returns {any}
+ */
 function handleYearsUntil(event) {
   event.preventDefault();
   document.querySelector('div#years-until').classList.remove('hidden');
@@ -72,6 +85,10 @@ function handleFormSubmit(event) {
 
 }
 
+/**
+ * Description
+ * @returns {any}
+ */
 function reset() {
   document.querySelector('#age-form').classList.remove('hidden');
   document.querySelector('#results').classList.add('hidden');
@@ -90,6 +107,12 @@ function reset() {
 
 }
 
+/**
+ * Description
+ * @param {any} 'DOMContentLoaded'
+ * @param {any} (
+ * @returns {any}
+ */
 window.addEventListener('DOMContentLoaded', () => {
   const birthdayForm = document.querySelector('form#birthday-form');
   const futureBirthdayForm = document.querySelector('form#future-birthday-form');
