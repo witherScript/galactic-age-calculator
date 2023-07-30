@@ -33,7 +33,6 @@ function handleYearsUntil(event) {
   const person = new Person(document.querySelector('#name').value, document.querySelector('#age').value);
   let ages = person.yearsUntil(futurebirthday);
   ages = {
-    'earth': ages[0],
     'mercury': ages[1],
     'venus': ages[2],
     'mars': ages[3],
