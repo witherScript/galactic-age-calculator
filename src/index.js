@@ -2,8 +2,6 @@ import Person from './js/person.js';
 import './css/styles.css';
 import 'bootstrap';
 
-
-
 function handleYearsBetween(event) {
   event.preventDefault();
   document.querySelector('div#years-between').classList.remove('hidden');
@@ -70,6 +68,25 @@ function handleFormSubmit(event) {
 
   document.querySelector('#age-form').classList.add('hidden');
   document.querySelector('#results').classList.remove('hidden');
+  document.querySelector('#after-submit').classList.remove('hidden');
+
+}
+
+function reset() {
+  document.querySelector('#age-form').classList.remove('hidden');
+  document.querySelector('#results').classList.add('hidden');
+  document.querySelector('#after-submit').classList.add('hidden');
+  document.querySelector('div#years-between').classList.add('hidden');
+  document.querySelector('div#years-until').classList.add('hidden');
+  document.querySelector('ul#years-between').classList.add('hidden');
+  document.querySelector('ul#years-until').classList.add('hidden');
+
+
+  let formArr = document.querySelectorAll('form');
+  formArr.forEach((form) => {
+    form.reset();
+  });
+
 
 }
 
@@ -89,5 +106,7 @@ window.addEventListener('DOMContentLoaded', () => {
   document.querySelector('button#years-until').addEventListener('click', () => {
     document.querySelector('div#years-until').classList.remove('hidden');
   });
+
+  document.querySelector('button#reset').addEventListener('click', reset);
 
 });

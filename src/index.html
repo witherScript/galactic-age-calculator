@@ -19,13 +19,16 @@
     <label for="name"></label>
     <input type="text" id="name" name="name" placeholder="Your Name" required>
     <label for="age"></label>
-    <input type="number" id="age" name="age" min="0" placeholder="Your Age" required>
+    <input type="number" id="age" name="age" max="128" min="0" placeholder="Your Age" required>
     <button type="submit">Save</button>
   </form>
 
-  <button id="ages">Calculate Age</button><br>
-  <button id="birthday">Calculate Years Between 2 Birthdays</button><br>
-  <button id="years-until">Calculate Years Until a certain Birthday</button><br>
+  <div class="hidden" id="after-submit">
+    <button id="ages">Calculate Age</button><br>
+    <button id="birthday">Calculate Years Between 2 Birthdays</button><br>
+    <button id="years-until">Calculate Years Until a certain Birthday</button><br>
+    <button id="reset">Reset</button>
+  </div>
 
   <div id="years-between" class="hidden">
     <form id="birthday-form">
@@ -38,10 +41,10 @@
 
     <ul id="years-between" class="hidden">
       <li>Between your <span id="birthday1"></span> birthday and your <span id="birthday2"></span> birthday on Mercury
-        you will be <span id="mercuryBetween"></span> years old</li>
-      <li>on Venus you will be <span id="venusBetween"></span> years old</li>
-      <li>on Mars you will be <span id="marsBetween"></span> years old</li>
-      <li>on Jupiter you will be <span id="jupiterBetween"></span> years old</li>
+        would be <span id="mercuryBetween"></span> years</li>
+      <li>on Venus: <span id="venusBetween"></span> years</li>
+      <li>on Mars: <span id="marsBetween"></span> years</li>
+      <li>on Jupiter:<span id="jupiterBetween"></span> years</li>
     </ul>
   </div>
 

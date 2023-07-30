@@ -31,6 +31,7 @@ Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
 Determines how many years have passed on each planet since a past birthday.
 
 
+
 56 and we want to calculate how many years have passed since their 43 birthday, we would find the following results:
 13 Earth years have passed.
 54.16 Mercury years have passed.
